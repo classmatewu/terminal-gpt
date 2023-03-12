@@ -1,6 +1,7 @@
 import 'isomorphic-unfetch';
 import { ChatGPTAPI } from 'chatgpt';
 import { OPENAI_API_KEY } from './config';
+import { writeLog } from './log'
 
 const chatGPTAPI = new ChatGPTAPI({
   apiKey: OPENAI_API_KEY
@@ -23,6 +24,7 @@ export async function getGPTAnswer(question: Question): Promise<Answer> {
   };
 
   try {
+    await writeLog(JSON.stringify(question))
     const res = await chatGPTAPI.sendMessage(question.text);
     console.log("res", res);
     answer.text = res.text;
@@ -31,5 +33,6 @@ export async function getGPTAnswer(question: Question): Promise<Answer> {
     answer.text = "网络异常，请稍侯重试";
   }
 
+  await writeLog(JSON.stringify(answer))
   return answer;
 }
