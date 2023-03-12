@@ -1,7 +1,7 @@
 {
   "name": "terminal-gpt",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "bin": {
     "vtui-app": "./dist/main.mjs"
@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "vtui dev",
     "build": "vtui build",
-    "release": "pnpm build && bumpp && tnpm publish"
+    "release": "pnpm build && bumpp && pnpm publish"
   },
   "dependencies": {
     "@vue/runtime-core": "^3.2.41",
