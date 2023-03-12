@@ -1,8 +1,12 @@
 {
-  "name": "terminal-gpt",
-  "private": true,
+  "name": "tgpt",
+  "private": false,
   "version": "0.0.3",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/classmatewu/terminal-gpt"
+  },
   "bin": {
     "vtui-app": "./dist/main.mjs"
   },
