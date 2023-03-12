@@ -4,3 +4,5 @@
 [2023-03-12:03:52:18]:{"type":"answer","text":"网络异常，请稍侯重试"}
 [2023-03-12 04:55:48]:{"type":"question","text":"tet"}
 [2023-03-12 04:55:49]:{"type":"answer","text":"网络异常，请稍侯重试"}
+[2023-03-12 07:40:45]:{"type":"question","text":"test"}
+[2023-03-12 07:40:47]:{"type":"answer","text":"Network error, please try again later."}

@@ -14,7 +14,7 @@ const chatList = ref([{
   text: "Hi, I am ChatGPT."
 }, {
   type: "question",
-  text: "Try press TAB to ask some questions."
+  text: "After setting up the API Key, try to say something..."
 }])
 onKeyData(['Enter'], async () => {
   const question = {
@@ -52,7 +52,7 @@ onKeyData(['d', 'D'], () => {
         <Text>{{ n % 2 ? '👋 ' : ' ✋' }}</Text>
       </Box>
       <Box width="30%" justifyContent="flex-end">
-        <Text dimmed>ArrowDown -&gt; ⚙️</Text>
+        <Text dimmed>ArrowDown -&gt; 🔧</Text>
       </Box>
     </Box>
     <Box width="100%" flexDirection="column" :padding="1">
@@ -81,7 +81,7 @@ onKeyData(['d', 'D'], () => {
     <!-- <Text :marginLeft="1" color="grey">sent</Text> -->
   </Box>
   <Box :marginTop="1">
-    <Text dimmed>💡 Tips: Press tab to input, press enter to send.</Text>
+    <Text dimmed>💡 Tips: Press Tab to input, press Enter to send.</Text>
   </Box>
 </template>
 

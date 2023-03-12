@@ -16,6 +16,7 @@
     "cos-nodejs-sdk-v5": "^2.11.19",
     "dayjs": "^1.11.7",
     "isomorphic-unfetch": "^4.0.2",
+    "pinia": "^2.0.33",
     "vue": "^3.2.41",
     "vue-termui": "*"
   },
