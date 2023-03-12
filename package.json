@@ -1,7 +1,7 @@
 {
   "name": "terminal-gpt",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "bin": {
     "vtui-app": "./dist/main.mjs"
