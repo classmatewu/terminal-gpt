@@ -58,16 +58,16 @@ onKeyData(['d', 'D'], () => {
     <Box width="100%" flexDirection="column" :padding="1">
       <Box v-for="(chat, index) in chatList" :key="index" width="100%" flexDirection="column">
         <Box v-if="chat.type === 'question'" width="100%" justifyContent="flex-end" alignItems="center">
-          <Box borderColor="greenBright" borderStyle="round" :paddingX="1">
+          <Box borderColor="greenBright" borderStyle="round" :paddingX="1" maxWidth="80%">
             <Text>
               {{chat.text}} 
             </Text>
           </Box>
-          <Text color="grey"> :You</Text>
+          <Text color="greyBright"> :You</Text>
         </Box>
         <Box v-if="chat.type === 'answer'" alignItems="center">
-          <Text color="grey">ChatGPT: </Text>
-          <Box borderColor="redBright" borderStyle="round" :paddingX="1">
+          <Text color="greyBright">ChatGPT: </Text>
+          <Box borderColor="redBright" borderStyle="round" :paddingX="1" maxWidth="80%">
             <Text>
               {{chat.text}}
             </Text>

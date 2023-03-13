@@ -8,5 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Box: typeof import('vue-termui')['TuiBox']
+    Input: typeof import('vue-termui')['TuiInput']
+    Text: typeof import('vue-termui')['TuiText']
   }
 }

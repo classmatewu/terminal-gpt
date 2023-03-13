@@ -14,7 +14,7 @@ onKeyData(['Enter'], () => {
 <template>
   <Box justifyContent="center" alignItems="center" width="100%">
     <Box width="22%">
-      <Text color="grey">{{props.label}}: </Text>
+      <Text color="greyBright">{{props.label}}: </Text>
     </Box>
     <Input label="" v-model="settingVal" :marginRight="1" minWidth="60%" />
   </Box>
