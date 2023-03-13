@@ -28,7 +28,7 @@ tgpt init
 ![setting.pnh](https://github.com/classmatewu/terminal-gpt/blob/main/assets/setting.png)
 
 ## BFF
-> You also can think of it as a forwarding service call
+> You also can think of it as a forwarding service call.
 ```
 curl -d'text=hello'-X POST https://localhost:7301/chat
 ```
